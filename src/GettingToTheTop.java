@@ -15,4 +15,25 @@ public class GettingToTheTop {
     *   n = 5;
     *   expectedOutput = 13;
     * */
+
+    public static int countDistinctWays(int n){
+
+        if( n < 1){
+            return 0;
+        }
+        if(n < 3){
+            return n;
+        }
+
+        int[] cache = new int[n+1];
+        cache[1] = 1;
+        cache[2] = 2;
+        cache[3] = 4;
+
+        for(int i = 4; i <= n; i++){
+            cache[i] = cache[i-1] + cache[i-2] + cache[i-3];
+        }
+
+        return cache[n];
+    }
 }
