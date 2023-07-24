@@ -7,5 +7,12 @@ public class GettingToTheTop {
     * our users can climb the ladder. This will enable us to track the progress of our users  and provide them with
     * personalized fitness plans.
     *
+    * Example 1:
+    *   n = 4;
+    *   expectedOutput = 7
+    *
+    * Example 2:
+    *   n = 5;
+    *   expectedOutput = 13;
     * */
 }
