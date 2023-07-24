@@ -15,7 +15,12 @@ public class GettingToTheTop {
     *   n = 5;
     *   expectedOutput = 13;
     * */
-
+    public static void main(String[] args){
+        System.out.println(countDistinctWays(3));
+        System.out.println(countDistinctWays(-1));
+        System.out.println(countDistinctWays(4));
+        System.out.println(countDistinctWays(6));
+    }
     public static int countDistinctWays(int n){
 
         if( n < 1){
